@@ -77,7 +77,7 @@ export default function CookiesPolicy() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-12 mb-6">Contact Us</h2>
             <p>
-              If you have any questions about our use of cookies, please contact us at privacy@axiomor.com or visit our <a href="/contact" className="text-brand-600 hover:text-brand-700 underline">Contact page</a>.
+              If you have any questions about our use of cookies, please contact us at privacy@axiomor.online or visit our <a href="/contact" className="text-brand-600 hover:text-brand-700 underline">Contact page</a>.
             </p>
           </div>
         </div>

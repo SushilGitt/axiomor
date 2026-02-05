@@ -21,7 +21,7 @@ export default function Contact() {
             <p className="text-gray-600 mb-8 leading-relaxed">
               We value your feedback. Whether you found a mistake in one of our reviews, want to suggest a new provider, or just want to say hello, please fill out the form.
               <br /><br />
-              For fast inquiries, you can also email us directly at <a href="mailto:support@axiomor.com" className="text-brand-600 hover:text-brand-700 font-medium">support@axiomor.com</a>.
+              For fast inquiries, you can also email us directly at <a href="mailto:support@axiomor.online" className="text-brand-600 hover:text-brand-700 font-medium">support@axiomor.online</a>.
             </p>
 
             <div className="space-y-6 mb-10">

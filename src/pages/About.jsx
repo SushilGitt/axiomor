@@ -91,8 +91,8 @@ export default function About() {
             <Card className="p-6 flex flex-col items-center text-center hover:shadow-md transition-shadow">
               <Mail className="w-8 h-8 text-brand-600 mb-4" />
               <h3 className="text-lg font-bold text-gray-900 mb-2">Email Support</h3>
-              <a href="mailto:support@axiomor.com" className="text-gray-600 hover:text-brand-600">
-                support@axiomor.com
+              <a href="mailto:support@axiomor.online" className="text-gray-600 hover:text-brand-600">
+                support@axiomor.online
               </a>
             </Card>
             

@@ -39,7 +39,7 @@ export default function AffiliateDisclosure() {
 
         <h3>Questions?</h3>
         <p>
-          If you have any questions about our affiliate relationships or how we fund this site, please contact us at <a href="mailto:support@axiomor.com">support@axiomor.com</a>.
+          If you have any questions about our affiliate relationships or how we fund this site, please contact us at <a href="mailto:support@axiomor.online">support@axiomor.online</a>.
         </p>
 
         <p className="mt-8 pt-8 border-t border-gray-200 text-sm">

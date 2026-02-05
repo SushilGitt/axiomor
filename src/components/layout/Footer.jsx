@@ -35,7 +35,7 @@ export function Footer() {
               <li><Link to="/contact" className="text-base text-gray-400 hover:text-brand-400">Contact Us</Link></li>
               <li><Link to="/about" className="text-base text-gray-400 hover:text-brand-400">About Us</Link></li>
               <li><Link to="/blog" className="text-base text-gray-400 hover:text-brand-400">Guides & Tutorials</Link></li>
-              <li><a href="mailto:support@axiomor.com" className="text-base text-gray-400 hover:text-brand-400">support@axiomor.com</a></li>
+              <li><a href="mailto:support@axiomor.online" className="text-base text-gray-400 hover:text-brand-400">support@axiomor.online</a></li>
             </ul>
           </div>
 
