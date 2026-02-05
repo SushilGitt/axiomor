@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Layout } from '../components/layout/Layout';
 import { Button } from '../components/ui/Button';
@@ -8,18 +8,11 @@ import { ProviderCard } from '../components/providers/ProviderCard';
 import { BlogCard } from '../components/blog/BlogCard';
 import { providers } from '../data/providers';
 import { blogPosts } from '../data/blogPosts';
-import { CheckCircle2, ShieldCheck, Zap, X } from 'lucide-react';
+import { CheckCircle2, ShieldCheck, Zap } from 'lucide-react';
 
 export default function Home() {
   const topProviders = providers.slice(0, 3);
   const location = useLocation();
-  const [showAdPopup, setShowAdPopup] = useState(false);
-
-  // Show the ad popup after a short delay on mount
-  useEffect(() => {
-    const timer = setTimeout(() => setShowAdPopup(true), 3000);
-    return () => clearTimeout(timer);
-  }, []);
 
   // Featured providers for detailed reviews (mix of domains and hosting including Kinsta)
   const kinsta = providers.find(p => p.name === 'Kinsta');
@@ -168,63 +161,6 @@ export default function Home() {
           </Button>
         </div>
       </section>
-      {/* Ad Popup */}
-      {showAdPopup && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
-          <div className="relative bg-white rounded-2xl shadow-2xl max-w-md w-full mx-4 overflow-hidden">
-            {/* Close Button */}
-            <button
-              onClick={() => setShowAdPopup(false)}
-              className="absolute top-3 right-3 z-10 p-1 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors"
-              aria-label="Close popup"
-            >
-              <X className="h-5 w-5 text-gray-600" />
-            </button>
-
-            {/* Product Image */}
-            <a
-              href="https://store.zoolz.com/order/checkout.php?PRODS=4727905&QTY=1&AFFILIATE=250666&CART=1"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block"
-            >
-              <div className="bg-gray-900 flex items-center justify-center p-6">
-                <img
-                  src="/genie-timeline-10.png"
-                  alt="Genie Timeline Pro 10"
-                  className="w-56 h-auto"
-                />
-              </div>
-            </a>
-
-            {/* Product Info */}
-            <div className="p-6">
-              <h3 className="text-xl font-bold text-gray-900 mb-2">
-                Genie Timeline Pro 10
-              </h3>
-              <p className="text-sm text-gray-600 mb-4">
-                Real-time automatic backups, version history, disaster recovery, encryption, and easy restore — protect your personal and system data continuously with minimal performance impact.
-              </p>
-              <div className="flex gap-3">
-                <a
-                  href="https://store.zoolz.com/order/checkout.php?PRODS=4727905&QTY=1&AFFILIATE=250666&CART=1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 inline-flex justify-center items-center px-4 py-2.5 bg-brand-600 text-white text-sm font-semibold rounded-lg hover:bg-brand-700 transition-colors"
-                >
-                  Get It Now
-                </a>
-                <button
-                  onClick={() => setShowAdPopup(false)}
-                  className="flex-1 inline-flex justify-center items-center px-4 py-2.5 border border-gray-300 text-gray-700 text-sm font-semibold rounded-lg hover:bg-gray-50 transition-colors"
-                >
-                  No Thanks
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </Layout>
   );
 }
