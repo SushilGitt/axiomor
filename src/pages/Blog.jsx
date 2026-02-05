@@ -4,7 +4,7 @@ import { PageHeader } from '../components/layout/PageHeader';
 import { Card } from '../components/ui/Card';
 import { Button } from '../components/ui/Button';
 import { blogPosts } from '../data/blogPosts';
-import { Calendar, Clock, User } from 'lucide-react';
+import { Calendar, Clock } from 'lucide-react';
 
 export default function Blog() {
   return (
@@ -46,11 +46,7 @@ export default function Blog() {
                     Read More &rarr;
                   </Link>
                 </div>
-                <div className="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between">
-                   <div className="flex items-center text-xs text-gray-500">
-                     <User className="w-3 h-3 mr-1" />
-                     {post.author}
-                   </div>
+                <div className="mt-auto pt-4 border-t border-gray-100">
                    <span className="text-xs text-gray-400">
                      {post.date}
                    </span>

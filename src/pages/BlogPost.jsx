@@ -3,7 +3,7 @@ import { Layout } from '../components/layout/Layout';
 import { Button } from '../components/ui/Button';
 import { Badge } from '../components/ui/Badge';
 import { blogPosts } from '../data/blogPosts';
-import { Calendar, User, Clock, ArrowLeft } from 'lucide-react';
+import { Calendar, Clock, ArrowLeft } from 'lucide-react';
 
 export default function BlogPost() {
   const { id } = useParams();
@@ -35,10 +35,6 @@ export default function BlogPost() {
           </h1>
           
           <div className="flex items-center justify-center space-x-6 text-sm text-gray-500">
-            <div className="flex items-center">
-              <User className="w-4 h-4 mr-2" />
-              {post.author}
-            </div>
             <div className="flex items-center">
               <Calendar className="w-4 h-4 mr-2" />
               {post.date}
